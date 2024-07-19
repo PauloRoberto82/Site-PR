@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+body{
+    background-color: rgb(148, 248, 250);
+}
+
+.topnav { 
+    margin:0px;
+    padding: 0px;
+    width:430px;
+    height:40px; 
+    text-indent: 20px;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 20px;
+}
+  
+  .topnav a {
+    float: left;
+    color: #0dc7b4;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;}
+  
+  .topnav a:hover {
+    background-color: #0dc7b4;
+    color: black;}
+  
