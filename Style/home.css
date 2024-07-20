@@ -3,26 +3,49 @@
 body{
     background-color: rgb(148, 248, 250);
 }
-
-.topnav { 
-    margin:0px;
-    padding: 0px;
-    width:430px;
-    height:40px; 
-    text-indent: 20px;
-    overflow: hidden;
-    background-color: #333;
-    border-radius: 20px;
+h1{
+  text-align: center;
 }
-  
-  .topnav a {
-    float: left;
-    color: #0dc7b4;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 20px;}
-  
-  .topnav a:hover {
-    background-color: #0dc7b4;
-    color: black;}
-  
+/*Nav bar Animation*/
+nav {
+  position: flex;
+  width: 580px;
+  height: 50px;
+  background: #222;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+nav a{
+   position: relative;
+   display: inline;
+   font-size: 1em;
+   font-weight: 500;
+   color: white;
+   text-decoration: none;
+   padding: 10px 40px;
+   z-index: 1;
+}
+
+nav span{
+   position: absolute;
+   top:8px;
+   left: 8px;
+   width: 130px;
+   height: 50px;
+   background: linear-gradient(45deg, #000c0e, #36ecd1);
+   border-radius: 10px;
+   transition: 0.5s;
+}
+
+nav a:nth-child(1):hover~span{
+left: 8px;}   
+nav a:nth-child(2):hover~span{
+   left: 150px;}
+nav a:nth-child(3):hover~span{
+       left: 300px;}
+nav a:nth-child(4):hover~span{
+            left: 458px;} 
+/*Final navibar animation*/
